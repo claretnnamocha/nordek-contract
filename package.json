@@ -1,0 +1,7 @@
+{
+  "name": "nordek-contract",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/claretnnamocha/nordek-contract.git",
+  "author": "Claret Nnamocha <devclareo@gmail.com>"
+}
