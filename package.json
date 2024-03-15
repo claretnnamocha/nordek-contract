@@ -7,6 +7,12 @@
   "dependencies": {
     "hardhat": "^2.22.0"
   },
+  "scripts": {
+    "test": "npx hardhat test",
+    "coverage": "npx hardhat coverage",
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.ts"
+  },
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
     "@nomicfoundation/hardhat-ethers": "^3.0.0",

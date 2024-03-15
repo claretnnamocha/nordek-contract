@@ -94,12 +94,12 @@ describe("Crowdsale", function () {
       .connect(address1)
       .buyTokens(address1.address, startTime, { value: investment });
 
-    const vestTimestamp = startTime + 180 * 86400; // 180 days
+    const vestTimestamp = startTime + 365 * 86400; // 180 days
     const vestedAmount = await crowdsale.vestedAmount(
       vestTimestamp,
       address1.address
     );
-    expect(vestedAmount).to.equal("495890410958904109000");
+    expect(vestedAmount).to.equal(expectedTokens);
   });
 
   it("should release tokens after vesting period", async function () {

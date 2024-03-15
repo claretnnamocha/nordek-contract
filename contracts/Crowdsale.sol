@@ -38,10 +38,6 @@ contract Crowdsale {
         uint256 _vestingStartTime,
         uint256 _vestingDuration
     ) {
-        // require(
-        //     _crowdSaleStartTime >= timestamp,
-        //     "Start time must be in the future"
-        // );
         require(
             _crowdSaleEndTime > _crowdSaleStartTime,
             "End time must be after start time"
